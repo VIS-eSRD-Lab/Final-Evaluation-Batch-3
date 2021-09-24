@@ -13,7 +13,7 @@ You can access all offline and online help to solve the problem.
 
 ### Problem Statement is given in the Java-Based Microservice Solutions Development > Hackathon section.
 
-### Sample Codebase:  https://github.com/VIS-eSRD-Lab/educare.git 
+### Sample Codebase:  https://github.com/VIS-eSRD-Lab/Final-Evaluation-Batch-3.git
 *** You can work on this project you have done throughout the internship period.
 *** The guidelines of the hackathon problem has been given in the problem guidelines in your vInternship portal .
 

@@ -2,7 +2,8 @@
 MySoft Summer vInternship 2021
 
 ## Instruction:
-### Hackathon (9:30 a.m - 5:00 p.m)			Times: 7 hours 30 minutes	
+### Hackathon (9:30 a.m - 5:00 p.m)			
+### Times: 7 hours 30 minutes	
 We will give a sample problem statement that will be focused on a few module implementations relevant to the internship work. 
 Problems have few tasks.
 You can extend your previous project to solve this problem or work in the solution repository that will be provided to you.

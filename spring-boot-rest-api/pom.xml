@@ -80,6 +80,7 @@
             <artifactId>genson</artifactId>
             <version>0.99</version>
         </dependency>
+
     </dependencies>
 
     <build>

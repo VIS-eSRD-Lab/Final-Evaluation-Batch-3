@@ -1,0 +1,13 @@
+CourseID,CourseName,Phase,Fee
+101,Anatomy,1,10000
+102,Physiology,1,10000
+103,Biochemistry,1,12000
+201,Community Medicine,2,10000
+202,Forensic Medicine,2,12000
+301,Pharmacology & Theraputics,3,10000
+302,Pathology,3,11000
+303,Microbiology,3,12000
+401,Medicine & Allied Subjects,4,10000
+402,Surgery & Allied Subjects,4,11000
+403,Obstetrics & Gynecology,4,10000
+203,AnyCourse,2,10000

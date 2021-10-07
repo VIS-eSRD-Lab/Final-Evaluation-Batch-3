@@ -1,5 +1,5 @@
 package com.example.restservice.services;
-import com.example.restservice.models.tutorial.Tutorial;
+import com.example.restservice.models.Tutorial;
 import com.example.restservice.repository.TutorialRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

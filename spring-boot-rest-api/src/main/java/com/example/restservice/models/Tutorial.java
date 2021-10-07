@@ -1,4 +1,4 @@
-package com.example.restservice.models.tutorial;
+package com.example.restservice.models;
 
 import org.springframework.data.annotation.Id;
 import lombok.*;

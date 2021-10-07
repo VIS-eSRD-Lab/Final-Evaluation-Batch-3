@@ -43,7 +43,7 @@ export class CourseRegistrationComponent implements OnInit {
 
   private students: Student[];
   
-  displayedColumns: string[] = ['id', 'name', 'dob', 'phone', 'action'];
+  displayedColumns: string[] = ['id', 'name', 'currentPhase', 'phone', 'action'];
   dataSource: Student[];
   
   @ViewChild(MatTable,{static:true}) table: MatTable<any>;

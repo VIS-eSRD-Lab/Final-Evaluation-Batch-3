@@ -8,52 +8,31 @@
     <div [(ngModel)]="local_data.id"></div>
     
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Name</mat-label>
-      <input matInput type="text" [(ngModel)]="local_data.name">
+      <mat-label>{{action}} Id</mat-label>
+      <input matInput type="text" [(ngModel)]="local_data.id">
       <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
 
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Year</mat-label>
-      <input matInput type="number" [(ngModel)]="local_data.year">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
-  
-    <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Admisson Year</mat-label>
-      <input matInput type="number" [(ngModel)]="local_data.admissionYear">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
-  </ng-container>
-  
-  <!-- Update -->
-  <ng-container *ngIf="action === 'Update'">
-    <div [(ngModel)]="local_data.id"></div>
-    
-    <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Name</mat-label>
-      <input matInput type="text" [(ngModel)]="local_data.name">
-      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
-        <mat-icon>close</mat-icon>
-      </button>
-    </mat-form-field>
+        <mat-label>{{action}} Name</mat-label>
+        <input matInput type="text" [(ngModel)]="local_data.name">
+        <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+          <mat-icon>close</mat-icon>
+        </button>
+      </mat-form-field>
 
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Year</mat-label>
-      <input matInput type="number" [(ngModel)]="local_data.year">
+      <mat-label>{{action}} Date of Birth</mat-label>
+      <input matInput type="number" [(ngModel)]="local_data.dob">
       <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
         <mat-icon>close</mat-icon>
       </button>
     </mat-form-field>
   
     <mat-form-field class="example-form-field" appearance="fill">
-      <mat-label>{{action}} Admisson Year</mat-label>
+      <mat-label>{{action}} Phone</mat-label>
       <input matInput type="number" [(ngModel)]="local_data.admissionYear">
       <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
         <mat-icon>close</mat-icon>

@@ -10,7 +10,7 @@
         //////////////////////////////
         -->
 
-        <h1 class="title">Course Registration List</h1>
+        <h1 class="title">Student List</h1>
   
          <div class="example-container mat-elevation-z8">
           <table mat-table [dataSource]="dataSource">
@@ -28,9 +28,9 @@
             </ng-container>
         
             <!-- Weight Column -->
-            <ng-container matColumnDef="dob">
-              <th mat-header-cell *matHeaderCellDef>Date of Birth</th>
-              <td mat-cell *matCellDef="let element"> {{element[2]}} </td>
+            <ng-container matColumnDef="currentPhase">
+              <th mat-header-cell *matHeaderCellDef>Current Phase</th>
+              <td mat-cell *matCellDef="let element"> {{element[7]}} </td>
             </ng-container>
         
             <!-- Symbol Column -->

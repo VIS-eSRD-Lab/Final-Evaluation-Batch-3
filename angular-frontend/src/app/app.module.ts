@@ -10,6 +10,11 @@ import { CreateTutorialComponent } from './components/tutorial/create-tutorial/c
 import { UpdateTutorialComponent } from './components/tutorial/update-tutorial/update-tutorial.component';
 import { TutorialListComponent } from './components/tutorial/tutorial-list/tutorial-list.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { AllStudentListComponent } from './components/registration/all-student-list/all-student-list.component';
+import { AddComponent } from './components/registration/add/add.component';
+import { GridListComponent } from './components/registration/grid-list/grid-list.component';
+import { DetailsComponent } from './components/registration/details/details.component';
+import { RegSlipComponent } from './components/registration/reg-slip/reg-slip.component';
 
 
 @NgModule({
@@ -18,7 +23,12 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     TutorialDetailsComponent,
     CreateTutorialComponent,
     UpdateTutorialComponent,
-    TutorialListComponent
+    TutorialListComponent,
+    AllStudentListComponent,
+    AddComponent,
+    GridListComponent,
+    DetailsComponent,
+    RegSlipComponent
   ],
     imports: [
         RouterModule,

@@ -4,6 +4,7 @@ import lombok.*;
 import org.springframework.data.annotation.Id;
 
 import javax.persistence.*;
+import java.time.Instant;
 import java.util.Date;
 
 @Entity
@@ -36,7 +37,7 @@ public class CourseRegistration {
     private int courseId;
 
     @Column(name = "courseName")
-    private int courseName;
+    private String courseName;
 
     @Column(name = "courseFee")
     private float courseFee;
@@ -54,11 +55,11 @@ public class CourseRegistration {
     private boolean paymentStatus;
 
     @Column(name = "dueDate")
-    private Date dueDate;
+    private Instant dueDate;
 
     @Column(name = "requestDate")
-    private Date requestDate;
+    private Instant requestDate;
 
     @Column(name = "createdOn")
-    private Date createdOn;
+    private Instant createdOn;
 }

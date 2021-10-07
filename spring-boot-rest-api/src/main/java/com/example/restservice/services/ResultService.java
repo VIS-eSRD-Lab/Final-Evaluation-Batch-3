@@ -36,6 +36,32 @@ public class ResultService {
         return values;
     }
 
+    public List<List<String>> filterResultP(int id){
+        List<List<String>> records = new ArrayList<>();
+        records = csvResult();
+        List<List<String>> filterRecords = new ArrayList<>();
+
+        for(List<String> record: records){
+            if(Objects.equals(record.get(2), Integer.toString(id))){
+                filterRecords.add(record);
+            }
+        }
+        return  filterRecords;
+    }
+
+    public List<List<String>> filterResultS(int id){
+        List<List<String>> records = new ArrayList<>();
+        records = csvResult();
+        List<List<String>> filterRecords = new ArrayList<>();
+
+        for(List<String> record: records){
+            if(Objects.equals(record.get(0), Integer.toString(id))){
+                filterRecords.add(record);
+            }
+        }
+        return  filterRecords;
+    }
+
     public List<List<String>> getResultByPhase(int id, List<List<String>> courses){
         List<List<String>> records = new ArrayList<>();
         records = csvResult();
@@ -43,11 +69,7 @@ public class ResultService {
         List<List<String>> filterRecords = new ArrayList<>();
         List<List<String>> respRecords = new ArrayList<>();
 
-        for(List<String> record: records){
-            if(Objects.equals(record.get(2), Integer.toString(id))){
-                filterRecords.add(record);
-            }
-        }
+        filterRecords = filterResultP(id);
 
         int mark[] = new int[1000];
         for(int i = 0; i < 1000; i++)mark[i] = 0;
@@ -72,12 +94,7 @@ public class ResultService {
         List<List<String>> filterRecords = new ArrayList<>();
         List<List<String>> respRecords = new ArrayList<>();
 
-        for(List<String> record: records){
-            if(Objects.equals(record.get(0), Integer.toString(id))){
-                filterRecords.add(record);
-            }
-        }
-        System.out.println(filterRecords);
+        filterRecords = filterResultS(id);
 
         int mark[] = new int[1000];
         for(int i = 0; i < 1000; i++)mark[i] = 0;

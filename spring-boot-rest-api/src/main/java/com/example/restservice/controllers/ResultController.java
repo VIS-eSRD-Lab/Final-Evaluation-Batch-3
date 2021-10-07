@@ -1,7 +1,6 @@
 package com.example.restservice.controllers;
 
 import com.example.restservice.services.ResultService;
-import com.example.restservice.services.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

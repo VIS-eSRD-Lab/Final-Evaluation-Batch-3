@@ -1,0 +1,60 @@
+<!-- Main content -->
+  <div class="content">
+    <div class="container-fluid">
+  
+         <!--
+        //////////////////////////////
+        //////////////////////////////
+            Main Content Goes Here
+        //////////////////////////////
+        //////////////////////////////
+        -->
+
+        <h1 class="title">Course Registration List</h1>
+  
+         <div class="example-container mat-elevation-z8">
+          <table mat-table [dataSource]="dataSource">
+          
+            <!-- Position Column -->
+            <ng-container matColumnDef="id">
+              <th mat-header-cell *matHeaderCellDef> No. </th>
+              <td mat-cell *matCellDef="let element"> {{element[0]}} </td>
+            </ng-container>
+        
+            <!-- Name Column -->
+            <ng-container matColumnDef="name">
+              <th mat-header-cell *matHeaderCellDef> Name </th>
+              <td mat-cell *matCellDef="let element"> {{element[1]}} </td>
+            </ng-container>
+        
+            <!-- Weight Column -->
+            <ng-container matColumnDef="dob">
+              <th mat-header-cell *matHeaderCellDef>Date of Birth</th>
+              <td mat-cell *matCellDef="let element"> {{element[2]}} </td>
+            </ng-container>
+        
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="phone">
+              <th mat-header-cell *matHeaderCellDef> Phone </th>
+              <td mat-cell *matCellDef="let element"> {{element[3]}} </td>
+            </ng-container>
+  
+             <!-- Action Column -->
+            <ng-container matColumnDef="action">
+              <th mat-header-cell *matHeaderCellDef> Action </th>
+              <td mat-cell *matCellDef="let element" class="action-link"> 
+                <button mat-mini-fab color="accent" (click)="openDialog('Add', {})">
+                  <mat-icon>add</mat-icon>
+                </button>
+                <button mat-mini-fab color="success" (click)="openDialog('View', element)">
+                  <mat-icon>visibility</mat-icon>
+                </button>  
+              </td>
+            </ng-container>
+        
+            <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+  </div>
+  <!--Main content -->

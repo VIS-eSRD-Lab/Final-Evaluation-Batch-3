@@ -10,7 +10,16 @@ import { CreateTutorialComponent } from './components/tutorial/create-tutorial/c
 import { UpdateTutorialComponent } from './components/tutorial/update-tutorial/update-tutorial.component';
 import { TutorialListComponent } from './components/tutorial/tutorial-list/tutorial-list.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
-
+import { CourseRegistrationComponent } from './components/course-registration/course-registration.component';
+import { DialogBoxComponent } from './components/course-registration/dialog-box/dialog-box.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpModule } from '@angular/http';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -18,7 +27,9 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     TutorialDetailsComponent,
     CreateTutorialComponent,
     UpdateTutorialComponent,
-    TutorialListComponent
+    TutorialListComponent,
+    CourseRegistrationComponent,
+    DialogBoxComponent
   ],
     imports: [
         RouterModule,
@@ -27,6 +38,17 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
         HttpClientModule,
         FormsModule,
         ReactiveFormsModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatTableModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatButtonModule,
+        MatInputModule,
+        BrowserModule,
+        HttpModule,
+        MatIconModule,
     ],
   providers: [],
   bootstrap: [AppComponent]

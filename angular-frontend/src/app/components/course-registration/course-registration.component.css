@@ -1,0 +1,27 @@
+.example-container {
+    height: 400px;
+    overflow: auto;
+  }
+  
+table {
+  width: 100%;
+}
+
+button {
+  margin-right: 10px;
+}
+
+.uptoTable{
+  display: flex;
+  justify-content:space-between;
+}
+
+.title{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.mat-success {
+  background-color: green;
+  color: #fff;
+}

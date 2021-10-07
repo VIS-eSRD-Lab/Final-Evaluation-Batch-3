@@ -1,0 +1,75 @@
+<!-- dialog-box.component.html -->
+<h1 mat-dialog-title>Row Action :: <strong>{{action}}</strong></h1>
+
+<div mat-dialog-content>
+
+  <!-- Add -->
+  <ng-container *ngIf="action === 'Add'">
+    <div [(ngModel)]="local_data.id"></div>
+    
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Name</mat-label>
+      <input matInput type="text" [(ngModel)]="local_data.name">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Year</mat-label>
+      <input matInput type="number" [(ngModel)]="local_data.year">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Admisson Year</mat-label>
+      <input matInput type="number" [(ngModel)]="local_data.admissionYear">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </ng-container>
+  
+  <!-- Update -->
+  <ng-container *ngIf="action === 'Update'">
+    <div [(ngModel)]="local_data.id"></div>
+    
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Name</mat-label>
+      <input matInput type="text" [(ngModel)]="local_data.name">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Year</mat-label>
+      <input matInput type="number" [(ngModel)]="local_data.year">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  
+    <mat-form-field class="example-form-field" appearance="fill">
+      <mat-label>{{action}} Admisson Year</mat-label>
+      <input matInput type="number" [(ngModel)]="local_data.admissionYear">
+      <button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+        <mat-icon>close</mat-icon>
+      </button>
+    </mat-form-field>
+  </ng-container>
+
+  <ng-container *ngIf="action === 'View'">
+    <H1>Alif</H1>
+  </ng-container>
+
+  <ng-container *ngIf="action === 'Delete'">
+    Sure to delete <b>{{local_data.name}}</b>?
+  </ng-container>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="doAction()">{{action}}</button>
+  <button mat-button (click)="closeDialog()" mat-flat-button color="warn">Cancel</button>
+</div>

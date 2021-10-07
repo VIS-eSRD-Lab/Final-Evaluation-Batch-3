@@ -11,7 +11,7 @@ import {  FormBuilder } from '@angular/forms';
   styleUrls: ['./tutorial-list.component.css']
 })
 export class TutorialListComponent implements OnInit {
-  tutorials: Observable<Tutorial[]>;
+  tutorials: Observable<Tutorial[]>; 
   searchForm;
 
   constructor(private tutorialService: TutorialService, private router: Router, private formBuilder: FormBuilder) {
